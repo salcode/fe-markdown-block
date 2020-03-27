@@ -1,5 +1,5 @@
 /**
- * EDIT: Rich Rext Block
+ * EDIT: Markdown Block
  */
 import { PlainText } from '@wordpress/block-editor';
 import { __ } from '@wordpress/i18n';

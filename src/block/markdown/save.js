@@ -1,11 +1,14 @@
 /**
- * SAVE: Rich Rext Block
+ * SAVE: Markdown to HTML
  */
 import marked from "marked";
 
 const {
 	blockEditor: {
 		RichText,
+	},
+	element: {
+		RawHTML,
 	},
 } = wp;
 
@@ -18,11 +21,7 @@ const Save = ( props ) => {
 	} = props;
 
 	return (
-		<RichText.Content
-			className={ className }
-			tagName="div"
-			value={ marked(source) }
-		/>
+		<RawHTML>{ marked(source) }</RawHTML>
 	);
 };
 
