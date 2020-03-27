@@ -1,6 +1,8 @@
 /**
  * SAVE: Rich Rext Block
  */
+import marked from "marked";
+
 const {
 	blockEditor: {
 		RichText,
@@ -19,7 +21,7 @@ const Save = ( props ) => {
 		<RichText.Content
 			className={ className }
 			tagName="div"
-			value={ source }
+			value={ marked(source) }
 		/>
 	);
 };
