@@ -7,24 +7,24 @@ import { __ } from '@wordpress/i18n';
 const Edit = ( props ) => {
 	const {
 		attributes: {
-			content,
+			source,
 		},
 		className,
 		setAttributes,
 	} = props;
 
-	// Update field content on change.
-	const onChangeContent = ( newContent ) => {
-		setAttributes( { content: newContent } );
+	// Update field source on change.
+	const onChangeSource = ( newSource ) => {
+		setAttributes( { source: newSource } );
 	};
 
 	return (
 		<RichText
 			tagName="p"
 			className={ className }
-			onChange={ onChangeContent }
-			value={ content }
-			placeholder={ __( 'RichText Demo...', 'fe-markdown-block' ) }
+			onChange={ onChangeSource }
+			value={ source }
+			placeholder={ __( 'Markdown Demo...', 'fe-markdown-block' ) }
 		/>
 	);
 };

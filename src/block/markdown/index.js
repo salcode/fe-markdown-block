@@ -21,11 +21,7 @@ registerBlockType( 'salcode/markdown', {
 		__( 'richtext', 'fe-markdown-block' ),
 	],
 	attributes: {
-		content: {
-			type: 'array',
-			source: 'children',
-			selector: 'p',
-		},
+		source: { type: 'string' },
 	},
 	edit,
 	save,

@@ -10,7 +10,7 @@ const {
 const Save = ( props ) => {
 	const {
 		attributes: {
-			content,
+			source,
 		},
 		className,
 	} = props;
@@ -19,7 +19,7 @@ const Save = ( props ) => {
 		<RichText.Content
 			className={ className }
 			tagName="p"
-			value={ content }
+			value={ source }
 		/>
 	);
 };
