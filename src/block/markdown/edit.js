@@ -1,7 +1,7 @@
 /**
  * EDIT: Rich Rext Block
  */
-import { RichText } from '@wordpress/block-editor';
+import { PlainText } from '@wordpress/block-editor';
 import { __ } from '@wordpress/i18n';
 
 const Edit = ( props ) => {
@@ -19,8 +19,7 @@ const Edit = ( props ) => {
 	};
 
 	return (
-		<RichText
-			tagName="p"
+		<PlainText
 			className={ className }
 			onChange={ onChangeSource }
 			value={ source }
