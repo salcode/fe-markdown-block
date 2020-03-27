@@ -13,8 +13,8 @@ const {
 	},
 } = wp;
 
-registerBlockType( 'wdsbs/rich-text-demo', {
-	title: __( 'RichText Demo', 'fe-markdown-block' ),
+registerBlockType( 'salcode/markdown', {
+	title: __( 'salcode Markdown', 'fe-markdown-block' ),
 	icon: 'edit',
 	category: 'common',
 	keywords: [

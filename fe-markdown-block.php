@@ -68,7 +68,7 @@ function register_block() {
 	}
 
 	// Register block with WordPress.
-	register_block_type( 'salcode/rich-text-demo', array(
+	register_block_type( 'salcode/markdown', array(
 		'editor_script' => 'fe-markdown-block-editor-script',
 		'editor_style'  => 'fe-markdown-block-editor-style',
 		'style'         => 'fe-markdown-block-style',
