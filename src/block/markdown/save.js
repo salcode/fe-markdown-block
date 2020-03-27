@@ -18,7 +18,7 @@ const Save = ( props ) => {
 	return (
 		<RichText.Content
 			className={ className }
-			tagName="p"
+			tagName="div"
 			value={ source }
 		/>
 	);
