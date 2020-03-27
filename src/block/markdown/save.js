@@ -4,9 +4,6 @@
 import marked from "marked";
 
 const {
-	blockEditor: {
-		RichText,
-	},
 	element: {
 		RawHTML,
 	},
