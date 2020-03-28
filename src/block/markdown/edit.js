@@ -6,6 +6,7 @@ import { useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
 const Edit = ( props ) => {
+  const [isPreview, setIsPreview] = useState(false);
 	const {
 		attributes: {
 			source,
