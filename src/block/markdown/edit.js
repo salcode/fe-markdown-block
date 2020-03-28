@@ -22,6 +22,8 @@ const Edit = ( props ) => {
 
 	return (
 		<div className={ className }>
+			<button onClick={() => setIsPreview(!isPreview)}>Toggle isPreview</button>
+			<p>isPreview is {isPreview ? 'true' : 'false'}</p>
 			<PlainText
 				onChange={ onChangeSource }
 				value={ source }
