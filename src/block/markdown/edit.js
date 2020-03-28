@@ -2,6 +2,7 @@
  * EDIT: Markdown Block
  */
 import { PlainText } from '@wordpress/block-editor';
+import { useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
 const Edit = ( props ) => {
