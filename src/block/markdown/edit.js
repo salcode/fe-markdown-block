@@ -1,8 +1,14 @@
 /**
  * EDIT: Markdown Block
  */
-import { PlainText } from '@wordpress/block-editor';
-import { __ } from '@wordpress/i18n';
+const {
+	blockEditor: {
+		PlainText,
+	},
+	i18n: {
+		__,
+	},
+} = wp;
 
 const Edit = ( props ) => {
 	const {
