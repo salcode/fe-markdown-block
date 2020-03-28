@@ -21,12 +21,13 @@ const Edit = ( props ) => {
 	};
 
 	return (
-		<PlainText
-			className={ className }
-			onChange={ onChangeSource }
-			value={ source }
-			placeholder={ __( 'Markdown Demo...', 'fe-markdown-block' ) }
-		/>
+		<div className={ className }>
+			<PlainText
+				onChange={ onChangeSource }
+				value={ source }
+				placeholder={ __( 'Markdown Demo...', 'fe-markdown-block' ) }
+			/>
+		</div>
 	);
 };
 
