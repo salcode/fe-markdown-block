@@ -19,7 +19,7 @@ const Save = ( props ) => {
 
 	return (
 		<div className={ className }>
-			<RawHTML>{ marked(source) }</RawHTML>
+			<RawHTML>{ marked(source||'') }</RawHTML>
 		</div>
 	);
 };
