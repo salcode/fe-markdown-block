@@ -26,13 +26,21 @@ const Edit = ( props ) => {
 			<BlockControls>
 				<Toolbar>
 					<Button
-						className="components-tab-button"
+						className= {
+							!isPreview ?
+								'components-tab-button is-active' :
+								'components-tab-button'
+						}
 						onClick={() => setIsPreview(false)}
 					>
 						<span>{__('Markdown', 'fe-markdown-block')}</span>
 					</Button>
 					<Button
-						className="components-tab-button"
+						className={
+							isPreview ?
+								'components-tab-button is-active' :
+								'components-tab-button'
+						}
 						onClick={() => setIsPreview(true)}
 					>
 						<span>{__('Preview', 'fe-markdown-block')}</span>
