@@ -27,9 +27,15 @@ const Edit = ( props ) => {
 				<Toolbar>
 					<Button
 						className="components-tab-button"
-						onClick={() => setIsPreview(!isPreview)}
+						onClick={() => setIsPreview(false)}
 					>
-						<span>Toggle isPreview</span>
+						<span>{__('Markdown', 'fe-markdown-block')}</span>
+					</Button>
+					<Button
+						className="components-tab-button"
+						onClick={() => setIsPreview(true)}
+					>
+						<span>{__('Preview', 'fe-markdown-block')}</span>
 					</Button>
 				</Toolbar>
 			</BlockControls>
