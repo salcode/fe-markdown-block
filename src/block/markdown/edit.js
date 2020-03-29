@@ -2,6 +2,7 @@
  * EDIT: Markdown Block
  */
 import { BlockControls, PlainText } from '@wordpress/block-editor';
+import { Toolbar } from '@wordpress/components';
 import { useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
@@ -23,7 +24,9 @@ const Edit = ( props ) => {
 	return (
 		<div className={ className }>
 			<BlockControls>
-				<button onClick={() => setIsPreview(!isPreview)}>Toggle isPreview</button>
+				<Toolbar>
+					<button onClick={() => setIsPreview(!isPreview)}>Toggle isPreview</button>
+				</Toolbar>
 			</BlockControls>
 			<p>isPreview is {isPreview ? 'true' : 'false'}</p>
 			<PlainText
