@@ -1,7 +1,7 @@
 /**
  * EDIT: Markdown Block
  */
-import { PlainText } from '@wordpress/block-editor';
+import { BlockControls, PlainText } from '@wordpress/block-editor';
 import { useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
@@ -22,7 +22,9 @@ const Edit = ( props ) => {
 
 	return (
 		<div className={ className }>
-			<button onClick={() => setIsPreview(!isPreview)}>Toggle isPreview</button>
+			<BlockControls>
+				<button onClick={() => setIsPreview(!isPreview)}>Toggle isPreview</button>
+			</BlockControls>
 			<p>isPreview is {isPreview ? 'true' : 'false'}</p>
 			<PlainText
 				onChange={ onChangeSource }
