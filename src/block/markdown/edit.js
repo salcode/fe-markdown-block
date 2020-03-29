@@ -25,7 +25,12 @@ const Edit = ( props ) => {
 		<div className={ className }>
 			<BlockControls>
 				<Toolbar>
-					<Button onClick={() => setIsPreview(!isPreview)}>Toggle isPreview</Button>
+					<Button
+						className="components-tab-button"
+						onClick={() => setIsPreview(!isPreview)}
+					>
+						<span>Toggle isPreview</span>
+					</Button>
 				</Toolbar>
 			</BlockControls>
 			<p>isPreview is {isPreview ? 'true' : 'false'}</p>
