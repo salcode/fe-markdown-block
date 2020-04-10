@@ -4,14 +4,8 @@
 import edit from './edit';
 import save from './save';
 
-const {
-	i18n: {
-		__,
-	},
-	blocks: {
-		registerBlockType,
-	},
-} = wp;
+import { registerBlockType } from '@wordpress/blocks';
+import { __ } from '@wordpress/i18n';
 
 registerBlockType( 'salcode/markdown', {
 	title: __( 'salcode Markdown', 'fe-markdown-block' ),
