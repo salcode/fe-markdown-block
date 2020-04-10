@@ -48,11 +48,17 @@ const Edit = ( props ) => {
 				</Toolbar>
 			</BlockControls>
 			<p>isPreview is {isPreview ? 'true' : 'false'}</p>
-			<PlainText
-				onChange={ onChangeSource }
-				value={ source }
-				placeholder={ __( 'Markdown Demo...', 'fe-markdown-block' ) }
-			/>
+			{
+				isPreview ? (
+					<p>My preview</p>
+				) : (
+					<PlainText
+						onChange={ onChangeSource }
+						value={ source }
+						placeholder={ __( 'Markdown Demo...', 'fe-markdown-block' ) }
+					/>
+				)
+			}
 		</div>
 	);
 };
