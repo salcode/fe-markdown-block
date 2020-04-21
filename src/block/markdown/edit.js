@@ -49,7 +49,6 @@ const Edit = ( props ) => {
 					</Button>
 				</Toolbar>
 			</BlockControls>
-			<p>isPreview is {isPreview ? 'true' : 'false'}</p>
 			{
 				isPreview ? (
 					<SandBox html={ marked(source||'') } />
