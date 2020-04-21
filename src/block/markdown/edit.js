@@ -1,8 +1,10 @@
 /**
  * EDIT: Markdown Block
  */
+import marked from "marked";
+
 import { BlockControls, PlainText } from '@wordpress/block-editor';
-import { Button, Toolbar } from '@wordpress/components';
+import { Button, SandBox, Toolbar } from '@wordpress/components';
 import { useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
@@ -50,7 +52,7 @@ const Edit = ( props ) => {
 			<p>isPreview is {isPreview ? 'true' : 'false'}</p>
 			{
 				isPreview ? (
-					<p>My preview</p>
+					<SandBox html={ marked(source||'') } />
 				) : (
 					<PlainText
 						onChange={ onChangeSource }
