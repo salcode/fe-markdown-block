@@ -3,7 +3,11 @@
  */
 import marked from "marked";
 
-import { RawHTML } from '@wordpress/element';
+const {
+	element: {
+		RawHTML,
+	},
+} = wp;
 
 const Save = ( props ) => {
 	const {

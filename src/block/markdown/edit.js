@@ -3,10 +3,23 @@
  */
 import marked from "marked";
 
-import { BlockControls, PlainText } from '@wordpress/block-editor';
-import { Button, SandBox, Toolbar } from '@wordpress/components';
-import { useState } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+const {
+	blockEditor: {
+		BlockControls,
+		PlainText,
+	},
+	components: {
+		Button,
+		SandBox,
+		Toolbar,
+	},
+	element: {
+		useState,
+	},
+	i18n: {
+		__,
+	}
+} = wp;
 
 const Edit = ( props ) => {
   const [isPreview, setIsPreview] = useState(false);
