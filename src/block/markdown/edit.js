@@ -30,7 +30,7 @@ const Edit = ( props ) => {
 					<Button
 						className= {
 							!isPreview ?
-								'components-tab-button is-active' :
+								'components-tab-button is-pressed' :
 								'components-tab-button'
 						}
 						onClick={() => setIsPreview(false)}
@@ -40,7 +40,7 @@ const Edit = ( props ) => {
 					<Button
 						className={
 							isPreview ?
-								'components-tab-button is-active' :
+								'components-tab-button is-pressed' :
 								'components-tab-button'
 						}
 						onClick={() => setIsPreview(true)}
